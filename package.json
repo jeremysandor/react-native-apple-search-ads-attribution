@@ -1,12 +1,11 @@
-
 {
-  "name": "react-native-apple-ads-attribution",
-  "version": "1.0.2",
+  "name": "@crowdnautics/react-native-apple-search-ads-attribution",
+  "version": "1.0.1",
   "description": "Reads Apple Search Ads Attribution API in iOS",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kenmaca/react-native-apple-ads-attribution.git"
+    "url": "git+https://github.com/jeremysandor/react-native-apple-search-ads-attribution.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,13 +27,13 @@
     "iAd",
     "attributionDetails"
   ],
-  "author": "Kenneth Ma <ken@kenma.ca>",
+  "author": "Jeremy Sandor",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kenmaca/react-native-apple-ads-attribution/issues"
+    "url": "https://github.com/jeremysandor/react-native-apple-search-ads-attribution/issues"
   },
-  "homepage": "https://github.com/kenmaca/react-native-apple-ads-attribution#readme",
+  "homepage": "https://github.com/jeremysandor/react-native-apple-search-ads-attribution#readme",
   "peerDependencies": {
-    "react-native": "^0.41.2"
+    "react-native": "^0.61.5"
   }
 }
