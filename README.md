@@ -5,20 +5,19 @@
 - iAd Framework
 
 ## Getting started
-`$ yarn add react-native-apple-ads-attribution`
+`$ yarn add @crowdnautics/react-native-apple-search-ads-attribution`
 
-### Manual installation
+### Additional Required Manual installation
 #### iOS
 
-1. In XCode, [follow the instructions](https://searchads.apple.com/v/advanced/help/pdf/attribution-api.pdf) in Step 1 to add the iAd framework
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-apple-ads-attribution` and add `RNAppleAdsAttribution.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNAppleAdsAttribution.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
+1. In XCode, [follow the instructions](https://searchads.apple.com/v/advanced/help/pdf/attribution-api.pdf) to add the iAd framework
+2. Add the line `pod 'RNAppleAdsAttribution', :path => '../node_modules/react-native-apple-search-ads-attribution/RNAppleAdsAttribution.podspec'` to your Podfile
+3. `cd ios && pod install && cd ..`
 4. Run your project
 
 ## Usage
 ```javascript
-import AppleAdsAttribution from 'react-native-apple-ads-attribution';
+import AppleAdsAttribution from '@crowdnautics/react-native-apple-search-ads-attribution';
 
 let attributionData = AppleAdsAttribution.getAttributionData();
 ```
@@ -56,13 +55,3 @@ AppleAdsAttribution.getAttributionData().then(attributionData => {
 
 > Test values (mirroring the example above) will be sent when using a iOS simulator
 
-## License
-The MIT License (MIT)
-
-Copyright (c) 2018 Kenneth Ma, Freckle IOT
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
