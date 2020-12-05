@@ -11,13 +11,13 @@
 #### iOS
 
 1. In XCode, [follow the instructions](https://searchads.apple.com/v/advanced/help/pdf/attribution-api.pdf) to add the iAd framework
-2. Add the line `pod 'RNAppleAdsAttribution', :path => '../node_modules/react-native-apple-search-ads-attribution/RNAppleAdsAttribution.podspec'` to your Podfile
+2. Add the line `pod 'RNAppleAdsAttribution', :path => '../node_modules/@crowdnautics/react-native-apple-search-ads-attribution/RNAppleAdsAttribution.podspec'` to your Podfile
 3. `cd ios && pod install && cd ..`
 4. Run your project
 
 ## Usage
 ```javascript
-import AppleAdsAttribution from '@crowdnautics/react-native-apple-search-ads-attribution';
+import AppleAdsAttribution from '@crowdnautics/react-native-apple-search-ads-attribution'; 
 
 let attributionData = AppleAdsAttribution.getAttributionData();
 ```
